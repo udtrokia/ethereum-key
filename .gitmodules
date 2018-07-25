@@ -1,0 +1,3 @@
+[submodule "parity-ethkey"]
+	path = parity-ethkey
+	url = https://github.com/udtrokia/parity-ethkey
