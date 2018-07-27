@@ -1,3 +1,3 @@
 pub extern crate ethkey;
 
-pub mod source;
+pub mod band;

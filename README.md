@@ -1,4 +1,8 @@
-## REST-Like API for Ethereum
+## Ethereum Key
+> A wrapper of Parity's ethkey.
+
+### Ethkey
+
 
 ### API
 + https://etherscan.io/apis
@@ -27,4 +31,6 @@ Ethereum 的钱包目前均采用以上 Bitcoin HD Wallet 的架构，并订 `co
 
 Mnemonic Code Converter
 
-### Ethkey
+### TODO:
+
++ [ ] wasm interface.
