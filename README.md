@@ -1,7 +1,27 @@
 ## Ethereum Key
 > A wrapper of Parity's ethkey.
 
-### Ethkey
+### USAGE
+
+```rust
+extern crate ethereum_key;
+use ethereum_key::Band;
+
+// Keypair && Phrase
+let band: Band = Band::generate();
+
+println!("phrase:  {:?}", &band.phrase);
+println!("secret:  {:?}", &band.secret);
+println!("public:  {:?}", &band.public);
+println!("address: {:?}", &band.address);
+
+// Generate from phrase of secret
+// let phrase: String = "hemstitch remover province donated outing oversized playoff outshoot trowel wimp palm flashily"
+// let secret: String = "26d1ec50b4e62c1d1a40d16e7cacc6a6580757d5"
+// let band: Band = Band::from("phranse...phranse_12");
+// let band: Band = Band::from("sercret string")
+
+```
 
 
 ### API
