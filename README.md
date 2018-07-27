@@ -4,6 +4,7 @@
 ### USAGE
 
 ```rust
+
 extern crate ethereum_key;
 use ethereum_key::Band;
 
@@ -25,6 +26,7 @@ let phrase: String = "hemstitch remover province donated outing oversized playof
 let secret: String = "26d1ec50b4e62c1d1a40d16e7cacc6a6580757d5"
 let band2: Band = Band::from(phrase);
 let band3: Band = Band::from(secret);
+
 
 ```
 
@@ -58,3 +60,12 @@ Mnemonic Code Converter
 ### TODO:
 
 + [ ] wasm interface.
+
+### LICENSE
+
+GPL
+
+
+
+
+
