@@ -1,25 +1,25 @@
-use ethkey::{Brain, BrainPrefix, Generator};
+use ethkey::{Brain, BrainPrefix, Generator, Secret, Public, Address};
 
 const BRAIN_WORDS: usize = 12;
 
 #[derive(Debug, PartialEq)]
 pub struct Band {
     pub phrase:  String,
-    pub secret:  String,
-    pub public:  String,
-    pub address: String,
+    pub secret:  Secret,
+    pub public:  Public,
+    pub address: Address,
 }
 
 impl Band {
     pub fn generate() -> Self {
         let mut brain = BrainPrefix::new(vec![0], usize::max_value(), BRAIN_WORDS);
         let keypair = brain.generate().unwrap().to_owned();
-
+            
         Band {
             phrase:  brain.phrase().to_string(),
-            secret:  keypair.secret().to_string(),
-            public:  keypair.public().to_string(),
-            address: keypair.address().to_string(),
+            secret:  keypair.secret().to_owned(),
+            public:  keypair.public().to_owned(),
+            address: keypair.address().to_owned(),
         }
     }
 
@@ -34,11 +34,12 @@ impl Band {
 impl From<String> for Band {
     fn from(phrase: String) -> Self {
         let band = Brain::new(phrase.to_string()).generate().unwrap();
+
         Band {
             phrase:  phrase,
-            secret:  band.secret().to_string(),
-            public:  band.public().to_string(),
-            address: band.address().to_string(),
+            secret:  band.secret().to_owned(),
+            public:  band.public().to_owned(),
+            address: band.address().to_owned(),
         }
     }
 }

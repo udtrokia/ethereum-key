@@ -7,7 +7,7 @@
 extern crate ethereum_key;
 use ethereum_key::Band;
 
-// Keypair && Phrase
+// <- Keypair && Phrase ->
 let band: Band = Band::generate();
 
 println!("phrase:  {:?}", &band.phrase);
@@ -15,14 +15,18 @@ println!("secret:  {:?}", &band.secret);
 println!("public:  {:?}", &band.public);
 println!("address: {:?}", &band.address);
 
-// Generate from phrase of secret
-// let phrase: String = "hemstitch remover province donated outing oversized playoff outshoot trowel wimp palm flashily"
-// let secret: String = "26d1ec50b4e62c1d1a40d16e7cacc6a6580757d5"
-// let band: Band = Band::from("phranse...phranse_12");
-// let band: Band = Band::from("sercret string")
+// phrase:  "reborn chair modular immunize handshake sampling moody outburst grower sweat clique affront"
+// secret:  0x779ff5fe168de6560e95dff8c91d3af4c45ad1b261d03d22e2e1558fb27ea450
+// public:  0xa90b7d1953d7462fa8e9d510dbb7aeb081606ef9d7f3fb0c2dd3666f84c9917e61a6c4bfa0483050be0bb6d650530c02263b6fcd092e0536a909cbb222d7c4c7
+// address: 0x00be8153c55276be0b27e9f66db523f2f17cc783
+
+// <- Generate from phrase of secret ->
+let phrase: String = "hemstitch remover province donated outing oversized playoff outshoot trowel wimp palm flashily"
+let secret: String = "26d1ec50b4e62c1d1a40d16e7cacc6a6580757d5"
+let band2: Band = Band::from(phrase);
+let band3: Band = Band::from(secret);
 
 ```
-
 
 ### API
 + https://etherscan.io/apis
