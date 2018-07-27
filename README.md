@@ -1,5 +1,13 @@
+
+
+
 ## Ethereum Key
 > A wrapper of Parity's ethkey.
+
+
+[document](https://udtrokia.github.io/ethereum-key)
+
+
 
 ### USAGE
 
@@ -27,8 +35,8 @@ let secret: String = "26d1ec50b4e62c1d1a40d16e7cacc6a6580757d5"
 let band2: Band = Band::from(phrase);
 let band3: Band = Band::from(secret);
 
-
 ```
+
 
 ### API
 + https://etherscan.io/apis
@@ -37,6 +45,7 @@ let band3: Band = Band::from(secret);
 + https://github.com/EverexIO/Ethplorer/wiki/ethplorer-api
 + https://www.myetherapi.com/
 + https://infura.io/docs/#calling-a-json-rpc-method
+
 
 ### BIPs
 
@@ -57,15 +66,15 @@ Ethereum 的钱包目前均采用以上 Bitcoin HD Wallet 的架构，并订 `co
 
 Mnemonic Code Converter
 
+
 ### TODO:
 
++ [ ] prefix option.
 + [ ] wasm interface.
+
 
 ### LICENSE
 
 GPL
-
-
-
 
 
