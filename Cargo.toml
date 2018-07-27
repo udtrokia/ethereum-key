@@ -1,7 +1,7 @@
 [package]
-name = "ethkey"
+name = "ethereum-key"
 version = "0.1.0"
 authors = ["mercury <udtrokia@gmail.com>"]
 
 [dependencies]
-ethkey-cli = { path = "parity-ethkey/cli" }
+ethkey = { path = "parity-ethkey" }

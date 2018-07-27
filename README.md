@@ -26,3 +26,5 @@ __Ethereum HD wallet__:
 Ethereum 的钱包目前均采用以上 Bitcoin HD Wallet 的架构，并订 `coin_type` 为 `60'`。在一个 Ethereum HD Wallet 中，第一个账户(这里的账户是指 BIP44 中定义的 `account`) 的第一组 keypair, 其路径会是 `m/44'/60'/0'/0/0`。
 
 Mnemonic Code Converter
+
+### Ethkey
